@@ -104,3 +104,34 @@ This repository documents the available implementation evidence and the known li
 ## Acknowledgements
 
 Prepared as an academic ASIC design project. Add the student name, roll number, department, university, and project guide details before submission, as required by the institution.
+
+---
+
+## Physical Design Visual Evidence
+
+The following screenshots document the OpenLane physical-design stages.
+
+### 1. Floorplan
+![Floorplan](11_OpenLane_Stage_Outputs/Stage_Screenshots/floorplan.png)
+
+### 2. Placement
+![Placement](11_OpenLane_Stage_Outputs/Stage_Screenshots/placement.png)
+
+### 3. Clock Tree Synthesis (CTS)
+![CTS](11_OpenLane_Stage_Outputs/Stage_Screenshots/cts.png)
+
+### 4. Routing
+![Routing](11_OpenLane_Stage_Outputs/Stage_Screenshots/routing.png)
+
+### 5. Final GDS Layout
+![Final ASIC Layout](11_OpenLane_Stage_Outputs/Final_Signoff/final_layout.png)
+
+## Yosys Synthesis Visualization
+![Yosys Synthesis Graph](10_Yosys_Visualization/yosys_synthesis_graph.png)
+
+## Functional Simulation Waveforms
+
+GTKWave waveform files are available in [`09_Waveforms`](09_Waveforms/):
+- [Functional simulation waveform](09_Waveforms/overtemp_functional_waveform.vcd)
+- [Mapped-netlist waveform](09_Waveforms/overtemp_mapped_waveform.vcd)
+
