@@ -135,3 +135,8 @@ GTKWave waveform files are available in [`09_Waveforms`](09_Waveforms/):
 - [Functional simulation waveform](09_Waveforms/overtemp_functional_waveform.vcd)
 - [Mapped-netlist waveform](09_Waveforms/overtemp_mapped_waveform.vcd)
 
+
+### GTKWave Functional Simulation Screenshot
+
+![GTKWave Functional Simulation](09_Waveforms/gtkwave_functional.png)
+
