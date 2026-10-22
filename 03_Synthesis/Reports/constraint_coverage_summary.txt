@@ -1,0 +1,24 @@
+TIMING CONSTRAINT COVERAGE — OPENSTA
+
+Design: Overtemperature Monitoring and Shutdown Controller
+Technology: SKY130 HD
+Tool: OpenSTA 3.1.0
+
+Results:
+- Missing input delays: No issues reported
+- Missing output delays: No issues reported
+- Unconstrained endpoints: No issues reported
+- Registers without clocks: No issues reported
+- Multiple clocks: No issues reported
+- Combinational loops: No issues reported
+
+Library warning:
+default_fanout_load is 0.0.
+
+Limitations:
+- Pre-layout analysis with an ideal clock.
+- Routed parasitics and clock-tree effects are not included.
+- Reset recovery/removal and physical signoff remain outstanding.
+- The separate report_checks -unconstrained output requires
+  interpretation; dedicated check_setup endpoint validation
+  reported no issues.

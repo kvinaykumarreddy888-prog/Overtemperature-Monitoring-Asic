@@ -1,0 +1,24 @@
+OVER-TEMPERATURE MONITORING AND SHUTDOWN CONTROLLER
+PRE-LAYOUT STATIC TIMING ANALYSIS SUMMARY
+
+Technology: SKY130 HD
+Timing tool: OpenSTA 3.1.0
+Library: sky130_fd_sc_hd__tt_025C_1v80.lib
+
+Target clock period: 10 ns
+Target clock frequency: 100 MHz
+
+Worst reported setup slack: +8.42 ns (MET)
+Worst reported hold slack: +0.33 ns (MET)
+Total negative setup slack: 0.00 ns
+
+The system_running output path is constrained by a
+1 ns output delay and reports +8.42 ns setup slack.
+
+Limitations:
+- Ideal clock; clock-tree effects are not included.
+- Routed parasitics are not included.
+- Reset recovery/removal has not been independently verified.
+- The unconstrained-path report requires further investigation.
+- The Liberty library reports default_fanout_load = 0.0.
+- Results are pre-layout timing results, not physical signoff.

@@ -1,0 +1,26 @@
+OVER TEMPERATURE MONITORING AND SHUTDOWN CONTROLLER
+Technology: SKY130 HD
+Clock period: 10 ns
+Timing analysis: 16 PVT timing corners
+RTL counter comparison: persist_count == PERSIST_CYCLES - 1
+
+FUNCTIONAL VERIFICATION
+Six testbench scenarios passed:
+1. Reset and normal operation
+2. Short overtemperature pulse rejection
+3. Persistent overtemperature shutdown
+4. Clear blocked while temperature remains high
+5. Manual clear after cooldown
+6. Reset clears shutdown
+
+TIMING RESULTS
+Worst setup slack: +0.81 ns
+Worst hold slack: +0.20 ns
+Setup TNS: 0.00 ns across all reported corners
+Corners completed: 16
+Corner runs failed: 0
+
+LIMITATIONS
+Results are based on mapped-netlist STA.
+Post-route parasitics, clock-tree effects, and full signoff
+checks have not been established by these results.

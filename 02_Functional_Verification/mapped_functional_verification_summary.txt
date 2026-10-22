@@ -1,0 +1,29 @@
+PROJECT: Fault-Tolerant Overtemperature Monitoring and Shutdown Controller
+TECHNOLOGY: SKY130 High-Density Standard Cell Library
+VERIFICATION: Gate-Level Functional Simulation
+
+Simulation configuration:
+- Icarus Verilog
+- FUNCTIONAL model enabled
+- USE_POWER_PINS enabled
+- UNIT_DELAY defined as empty
+- SKY130 standard-cell power pins connected
+
+RESULT:
+All six mapped-netlist functional tests passed.
+
+Tests:
+1. Reset and normal operation — PASS
+2. Short overtemperature pulse rejected — PASS
+3. Persistent overtemperature triggers shutdown — PASS
+4. Clear blocked during overtemperature — PASS
+5. Manual clear after cooldown — PASS
+6. Reset clears latched shutdown — PASS
+
+Detailed log: mapped_test_results_power.txt
+Simulation output: overtemp_mapped.vcd
+
+Note:
+This verifies functional behavior of the mapped netlist under the
+testbench conditions. It does not, by itself, establish silicon-level
+fault tolerance, post-route timing closure, or physical signoff.

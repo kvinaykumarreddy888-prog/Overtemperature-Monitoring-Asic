@@ -1,0 +1,183 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO overtemp_controller
+  CLASS BLOCK ;
+  FOREIGN overtemp_controller ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 52.390 BY 63.110 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 13.135 10.640 14.735 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 23.370 10.640 24.970 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 33.605 10.640 35.205 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 43.840 10.640 45.440 51.920 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 18.480 46.700 20.080 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 28.680 46.700 30.280 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 38.880 46.700 40.480 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 49.080 46.700 50.680 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 9.835 10.640 11.435 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 20.070 10.640 21.670 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 30.305 10.640 31.905 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 40.540 10.640 42.140 51.920 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 15.180 46.700 16.780 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 25.380 46.700 26.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 35.580 46.700 37.180 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 45.780 46.700 47.380 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END clk
+  PIN cooling_enable
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 51.610 0.000 51.890 4.000 ;
+    END
+  END cooling_enable
+  PIN manual_clear
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 59.110 39.010 63.110 ;
+    END
+  END manual_clear
+  PIN overtemp_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 48.390 51.040 52.390 51.640 ;
+    END
+  END overtemp_in
+  PIN rst_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 23.840 4.000 24.440 ;
+    END
+  END rst_n
+  PIN shutdown
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 0.000 26.130 4.000 ;
+    END
+  END shutdown
+  PIN system_enable
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 51.040 4.000 51.640 ;
+    END
+  END system_enable
+  PIN system_running
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 59.110 13.250 63.110 ;
+    END
+  END system_running
+  PIN warning
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 48.390 23.840 52.390 24.440 ;
+    END
+  END warning
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 46.460 51.765 ;
+      LAYER met1 ;
+        RECT 4.670 10.640 51.910 51.920 ;
+      LAYER met2 ;
+        RECT 0.090 58.830 12.690 59.110 ;
+        RECT 13.530 58.830 38.450 59.110 ;
+        RECT 39.290 58.830 51.880 59.110 ;
+        RECT 0.090 4.280 51.880 58.830 ;
+        RECT 0.650 4.000 25.570 4.280 ;
+        RECT 26.410 4.000 51.330 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 50.640 47.990 51.845 ;
+        RECT 0.065 24.840 48.390 50.640 ;
+        RECT 4.400 23.440 47.990 24.840 ;
+        RECT 0.065 10.715 48.390 23.440 ;
+  END
+END overtemp_controller
+END LIBRARY
+

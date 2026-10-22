@@ -1,0 +1,30 @@
+VCD info: dumpfile overtemp.vcd opened for output.
+time=0 rst_n=0 overtemp=0 warning=0 shutdown=0 cooling=0 running=0
+time=30000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=0
+time=45000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=1
+TEST 1 PASSED: Reset and normal operation
+time=80000 rst_n=1 overtemp=1 warning=0 shutdown=0 cooling=0 running=1
+time=90000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=1
+time=105000 rst_n=1 overtemp=0 warning=1 shutdown=0 cooling=1 running=1
+time=115000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=1
+TEST 2 PASSED: Short pulse rejected
+time=170000 rst_n=1 overtemp=1 warning=0 shutdown=0 cooling=0 running=1
+time=195000 rst_n=1 overtemp=1 warning=1 shutdown=0 cooling=1 running=1
+time=225000 rst_n=1 overtemp=1 warning=1 shutdown=1 cooling=1 running=0
+TEST 3 PASSED: Persistent warning triggers shutdown
+TEST 4 PASSED: Clear blocked during overtemperature
+time=360000 rst_n=1 overtemp=0 warning=1 shutdown=1 cooling=1 running=0
+time=435000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=1
+TEST 5 PASSED: Manual clear after cooldown
+time=480000 rst_n=1 overtemp=1 warning=0 shutdown=0 cooling=0 running=1
+time=505000 rst_n=1 overtemp=1 warning=1 shutdown=0 cooling=1 running=1
+time=535000 rst_n=1 overtemp=1 warning=1 shutdown=1 cooling=1 running=0
+time=600000 rst_n=1 overtemp=0 warning=1 shutdown=1 cooling=1 running=0
+time=640000 rst_n=0 overtemp=0 warning=0 shutdown=0 cooling=0 running=0
+time=660000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=0
+time=675000 rst_n=1 overtemp=0 warning=0 shutdown=0 cooling=0 running=1
+TEST 6 PASSED: Reset clears latched shutdown
+----------------------------------------
+ALL TESTS PASSED
+----------------------------------------
+tb_overtemp_controller.v:172: $finish called at 706000 (1ps)

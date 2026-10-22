@@ -1,0 +1,148 @@
+OVER TEMPERATURE CONTROLLER - 16 CORNER STA SUMMARY
+Clock period: 10 ns
+RTL comparison: persist_count == PERSIST_CYCLES - 1
+
+===== sky130_fd_sc_hd__ff_100C_1v65 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.42
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.28
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ff_100C_1v95 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.53
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.22
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ff_n40C_1v56 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.35
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.31
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ff_n40C_1v65 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.42
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.28
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ff_n40C_1v76 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.49
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.24
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ff_n40C_1v95 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.56
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.20
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_100C_1v40 =====
+===== WORST SETUP SLACK =====
+worst slack max 6.15
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.98
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_100C_1v60 =====
+===== WORST SETUP SLACK =====
+worst slack max 7.37
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.68
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_n40C_1v28 =====
+===== WORST SETUP SLACK =====
+worst slack max 0.81
+--
+===== WORST HOLD SLACK =====
+worst slack min 1.11
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_n40C_1v35 =====
+===== WORST SETUP SLACK =====
+worst slack max 3.57
+--
+===== WORST HOLD SLACK =====
+worst slack min 1.10
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_n40C_1v40 =====
+===== WORST SETUP SLACK =====
+worst slack max 4.79
+--
+===== WORST HOLD SLACK =====
+worst slack min 1.09
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_n40C_1v44 =====
+===== WORST SETUP SLACK =====
+worst slack max 5.48
+--
+===== WORST HOLD SLACK =====
+worst slack min 1.05
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_n40C_1v60 =====
+===== WORST SETUP SLACK =====
+worst slack max 7.14
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.69
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__ss_n40C_1v76 =====
+===== WORST SETUP SLACK =====
+worst slack max 7.90
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.52
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__tt_025C_1v80 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.30
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.33
+--
+===== SETUP TNS =====
+tns max 0.00
+===== sky130_fd_sc_hd__tt_100C_1v80 =====
+===== WORST SETUP SLACK =====
+worst slack max 8.28
+--
+===== WORST HOLD SLACK =====
+worst slack min 0.34
+--
+===== SETUP TNS =====
+tns max 0.00

@@ -1,0 +1,5 @@
+create_clock -name core_clk -period 10.0 [get_ports clk]
+set_input_delay -clock core_clk -max 1.0 [get_ports {reset temp_code[*] trip_threshold[*]}]
+set_input_delay -clock core_clk -min 0.0 [get_ports {reset temp_code[*] trip_threshold[*]}]
+set_output_delay -clock core_clk -max 1.0 [get_ports shutdown]
+set_output_delay -clock core_clk -min 0.0 [get_ports shutdown]

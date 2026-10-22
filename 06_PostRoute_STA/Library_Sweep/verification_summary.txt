@@ -1,0 +1,22 @@
+POST-ROUTE STA VERIFICATION
+Design: overtemp_controller
+Routed database: original OpenLane routed ODB
+Constraints: original SDC
+Parasitics: original nominal SPEF
+Timing analysis: 16 standard SKY130A timing libraries plus 2 CCS-noise variants
+
+RESULT:
+The fresh STA sweep reproduced the existing timing results.
+The ss_n40C_1v28 library remains violated:
+  Setup worst slack: -1.38 ns
+  Hold worst slack:  -0.26 ns
+  Setup TNS:         -4.74 ns
+  Setup WNS:         -1.38 ns
+
+All other tested library variants reported non-negative setup and hold slack.
+The ss_n40C_1v28 corner is documented as VIOLATED, not passed.
+
+LIMITATIONS:
+This was a library sweep using nominal extracted parasitics.
+It is not full signoff across all combinations of timing libraries and
+minimum, nominal, and maximum parasitic extraction.
