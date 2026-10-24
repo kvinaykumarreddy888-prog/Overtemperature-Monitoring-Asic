@@ -140,3 +140,11 @@ GTKWave waveform files are available in [`09_Waveforms`](09_Waveforms/):
 
 ![GTKWave Functional Simulation](09_Waveforms/gtkwave_functional.png)
 
+## ASIC Project Demonstration Video
+
+**Project Title:** Design and Implementation of an ASIC-Based Overtemperature Monitoring and Automatic Shutdown Controller Using SKY130A PDK
+
+This video demonstrates the project implementation, including Verilog RTL design, functional verification, waveform analysis, Yosys synthesis, OpenLane physical design, and physical verification results.
+
+▶️ **[Watch the ASIC Project Demonstration Video](https://github.com/kvinaykumarreddy888-prog/Overtemperature-Monitoring-Asic/blob/main/Overtemperature_ASIC_Project_Presentation.mp4)**
+
